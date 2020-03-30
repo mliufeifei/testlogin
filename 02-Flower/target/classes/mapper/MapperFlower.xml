@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.demo.mapper.FlowerMapper">
+
+    <select id="selFlowerInfo" resultType="Flower">
+        select * from flower
+    </select>
+
+    <insert id="addFlower" parameterType="Flower">
+        insert into flower values (default ,#{name},#{price},#{production})
+    </insert>
+</mapper>
