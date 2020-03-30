@@ -25,7 +25,9 @@ public class FlowerController {
 
     @RequestMapping("/insFlowerInfo")
     public String insFlowerInfo(){
-
+        System.out.println("我是一个小测试");
+        System.out.println("我是一个小测试"); System.out.println("我是一个小测试");
+        System.out.println("我是一个小测试"); System.out.println("我是一个小测试");
         return "addFlower";
     }
 
@@ -33,11 +35,15 @@ public class FlowerController {
     public String addFlower(Flower flower){
 
         int i = flowerService.addFlower(flower);
-
+        System.out.println("12ewafksdafjsdfkldsj");
         if (i>0){
             return "success";
         }else {
             return "error";
+
+
         }
+
     }
+
 }
